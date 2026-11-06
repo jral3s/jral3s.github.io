@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Joseph Morales</title>
+  <meta name="description" content="Joseph Morales — academic projects and photography." />
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ── NAV ── -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#top" class="nav-brand" aria-label="Home">JM</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" id="nav-links">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#photography">Photography</a>
+        <a href="#contact" class="nav-cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ── HERO ── -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <span class="pill">Icahn School of Medicine at Mount Sinai</span>
+          <h1 class="hero-name">Joseph Morales</h1>
+          <p class="hero-tagline">
+            <!-- EDIT: one-line description of what you do -->
+            Researcher, builder, and photographer — a collection of the work I've done
+            across my academic career, plus the things I see through a lens.
+          </p>
+          <div class="hero-ctas">
+            <a href="#projects" class="btn btn-primary">View projects</a>
+            <a href="#photography" class="btn btn-secondary">Photography →</a>
+          </div>
+        </div>
+        <div class="hero-photo-wrap">
+          <!-- EDIT: drop your headshot at assets/img/profile.jpg -->
+          <img src="assets/img/profile.jpg" alt="Joseph Morales" class="hero-photo"
+               onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'hero-photo hero-photo-fallback',textContent:'JM'}))" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ── ABOUT ── -->
+    <section id="about" class="section">
+      <div class="container container--narrow">
+        <p class="eyebrow">About</p>
+        <h2 class="section-title">A little about me</h2>
+        <!-- EDIT: your bio -->
+        <p class="prose">
+          I'm a researcher at the Icahn School of Medicine at Mount Sinai. Replace this paragraph
+          with a short bio: where you studied, what you work on, and what you're curious about.
+        </p>
+        <p class="prose">
+          Outside of research I spend a lot of time behind a camera. A selection of that work
+          lives in the <a href="#photography" class="link">photography</a> section below.
+        </p>
+      </div>
+    </section>
+
+    <!-- ── EXPERIENCE ── (rendered from js/data.js) -->
+    <section id="experience" class="section section--soft">
+      <div class="container container--narrow">
+        <p class="eyebrow">Experience &amp; Education</p>
+        <h2 class="section-title">Where I've been</h2>
+        <ol class="timeline" id="timeline"></ol>
+      </div>
+    </section>
+
+    <!-- ── PROJECTS ── (rendered from js/data.js) -->
+    <section id="projects" class="section">
+      <div class="container">
+        <p class="eyebrow">Projects</p>
+        <h2 class="section-title">Selected work</h2>
+        <div class="filters" id="project-filters" role="tablist" aria-label="Filter projects"></div>
+        <div class="project-grid" id="project-grid"></div>
+      </div>
+    </section>
+
+    <!-- ── PHOTOGRAPHY ── (rendered from js/data.js) -->
+    <section id="photography" class="section section--soft">
+      <div class="container">
+        <p class="eyebrow">Photography</p>
+        <h2 class="section-title">Through the lens</h2>
+        <div class="gallery" id="gallery"></div>
+      </div>
+    </section>
+
+    <!-- ── CONTACT ── -->
+    <section id="contact" class="section section--dark">
+      <div class="container container--narrow contact">
+        <p class="eyebrow eyebrow--dark">Contact</p>
+        <h2 class="section-title section-title--dark">Let's talk</h2>
+        <p class="prose prose--dark">
+          Open to collaborations, questions about my work, or just talking photography.
+        </p>
+        <div class="contact-links">
+          <!-- EDIT: your links -->
+          <a class="btn btn-light" href="mailto:joseph.morales2@mssm.edu">Email</a>
+          <a class="btn btn-ghost" href="https://github.com/YOUR_USERNAME" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/YOUR_HANDLE" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn btn-ghost" href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Joseph Morales</span>
+      <nav class="footer-links">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#photography">Photography</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- ── LIGHTBOX ── -->
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Photo viewer">
+    <button class="lb-btn lb-close" aria-label="Close">×</button>
+    <button class="lb-btn lb-prev" aria-label="Previous">‹</button>
+    <figure class="lb-figure">
+      <img class="lb-img" alt="" />
+    </figure>
+    <button class="lb-btn lb-next" aria-label="Next">›</button>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
