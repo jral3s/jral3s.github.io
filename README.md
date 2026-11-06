@@ -5,7 +5,7 @@ A static, single-page portfolio (plain HTML/CSS/JS, no build step), hosted on Gi
 ## Editing content
 - **Projects, photos, experience:** edit `js/data.js`.
 - **Bio, hero text, contact links:** edit `index.html` (look for `EDIT:` comments).
-- **Headshot:** save it as `assets/img/profile.jpg` (portrait, ~800×950).
+- **Headshot:** save it as `assets/img/profile.png` (square, ideally 640×640 or larger).
 - **Photos:**
   1. Put full-resolution originals in `assets/photos/originals/` (git-ignored, never uploaded).
   2. Run `python3 scripts/resize_photos.py` — writes a 2400px copy to `assets/photos/` and a
