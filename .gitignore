@@ -1,2 +1,5 @@
 .DS_Store
 assets/photos/originals/
+
+# Raw project reference materials (reports, posters, thesis) — not published
+assets/projects/*/
