@@ -114,7 +114,7 @@ const EXPERIENCE = [
   },
   {
     dates: "Sept 2023 — Mar 2025",
-    title: "Graduate Student and Associate Researcher",
+    title: "Researcher",
     org: "MIT SPARK Lab — Sensing, Perception, Autonomy, and Robot Kinetics",
     description: "Investigated vision-language models combined with logic tensor networks and spatial ontologies to build hierarchical 3D scene graphs for task planning and navigation, and developed and fine-tuned vision-language models for open-set semantic classification in PyTorch. M.Eng. thesis advised by Luca Carlone.",
     tags: ["Robotics", "3D Scene Graphs", "Vision-Language Models"],
@@ -122,7 +122,7 @@ const EXPERIENCE = [
   {
     dates: "Jun 2024 — Sept 2024",
     title: "Robotics Research Intern",
-    org: "Universitat Politècnica de Catalunya, Barcelona, Spain",
+    org: "Institut de Robòtica i Informàtica Industrial (IRI, CSIC-UPC), Barcelona, Spain",
     description: "Used visual question answering models to prototype assistive systems that help people with visual impairments navigate Barcelona. Collaborated with industry partner Biel Glasses to design a model and evaluate it on data from their assistive glasses platform. Supervised by Jordi Sanchez-Riera.",
     tags: ["VQA", "Assistive Tech", "Computer Vision"],
   },
@@ -137,8 +137,8 @@ const EXPERIENCE = [
     dates: "Jun 2022 — Jul 2022",
     title: "Robotics and AI Intern",
     org: "Gaia AI, Cambridge, MA",
-    description: "Developed mobile apps and custom hardware backpacks to improve biomass measurement and carbon crediting in forestry. Designed, trained, and deployed object detection, semantic segmentation, and instance segmentation models on computers and mobile devices with PyTorch and TensorFlow.",
-    tags: ["Computer Vision", "Mobile ML", "Hardware"],
+    description: "Developed sensing and perception software for mobile apps and custom hardware backpacks used to improve biomass measurement and carbon crediting in forestry. Designed, trained, and deployed object detection, semantic segmentation, and instance segmentation models on computers and mobile devices with PyTorch and TensorFlow.",
+    tags: ["Computer Vision", "Mobile ML", "Perception"],
   },
   {
     dates: "Jan 2022 — Jun 2022",
@@ -165,7 +165,7 @@ const PUBLICATIONS = [
     venue: "Poster, JAX-NYSCF Conference, New York, NY, United States",
   },
   {
-    authors: "Morales, J., Karvelas, N., Torten Rabinowitz, A., Vaza, R., Chousal, A., Goate, A., Huang, K.l., & Elahi, F.",
+    authors: "Morales, J., Karvelas, N., Torten Rabinowitz, A., Vaza, R., Chousal, A., Goate, A., Huang, K.-l., & Elahi, F.",
     year: "2026",
     title: "Lifespan analyses reveal APOE genotype differences in plasma biomarkers of Alzheimer's disease across genetically determined ancestries",
     venue: "Poster, Alzheimer's Association International Conference (AAIC), London, United Kingdom",
