@@ -114,7 +114,7 @@ const EXPERIENCE = [
   },
   {
     dates: "Sept 2023 — Mar 2025",
-    title: "Researcher",
+    title: "Graduate Student and Associate Researcher",
     org: "MIT SPARK Lab — Sensing, Perception, Autonomy, and Robot Kinetics",
     description: "Investigated vision-language models combined with logic tensor networks and spatial ontologies to build hierarchical 3D scene graphs for task planning and navigation, and developed and fine-tuned vision-language models for open-set semantic classification in PyTorch. M.Eng. thesis advised by Luca Carlone.",
     tags: ["Robotics", "3D Scene Graphs", "Vision-Language Models"],
