@@ -13,6 +13,7 @@
   --on-dark-soft: #a9adb3;
   --link: #0d74ce;
   --accent-glow: #e8dbff;
+  --accent-rgb: 139, 92, 246;
 
   --font-sans: "Inter", -apple-system, system-ui, sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, monospace;
@@ -39,6 +40,7 @@
     --dark: #000000;
     --link: #5aa9ff;
     --accent-glow: #22133d;
+    --accent-rgb: 167, 139, 250;
   }
 }
 
@@ -258,9 +260,24 @@ ol, ul { list-style: none; }
 .tl-org { font-size: 15px; font-weight: 500; margin-bottom: 6px; }
 .tl-desc { font-size: 15px; margin-bottom: 10px; }
 
+/* ── SECTION SEAMS ──
+   Thin purple lines that fade toward the edges at each section boundary,
+   with a soft glow just below the center. */
+.section, .footer { position: relative; isolation: isolate; }
+.section--soft { border-color: transparent; }
+.section + .section::before, .footer::before {
+  content: ""; position: absolute; top: 0; left: 0; right: 0; height: 1px;
+  background: linear-gradient(90deg, transparent 5%, rgba(139, 92, 246, .9) 50%, transparent 95%);
+}
+.section + .section::after, .footer::after {
+  content: ""; position: absolute; top: 0; left: 50%; transform: translateX(-50%);
+  width: min(900px, 90%); height: 140px; z-index: -1; pointer-events: none;
+  background: radial-gradient(ellipse 50% 100% at 50% 0%, rgba(var(--accent-rgb), .14), transparent 70%);
+}
+
 /* ── CONTACT / FOOTER ── */
 .contact-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 28px; }
-.footer { border-top: 1px solid var(--hairline); padding: 28px 0; font-size: 13px; color: var(--muted); }
+.footer { border-top: 1px solid transparent; padding: 28px 0; font-size: 13px; color: var(--muted); }
 .footer-inner { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; }
 .footer-links { display: flex; gap: 20px; flex-wrap: wrap; }
 .footer-links a:hover { color: var(--ink); }
