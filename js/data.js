@@ -130,7 +130,7 @@ const EXPERIENCE = [
     dates: "2023 — 2024",
     title: "M.Eng., Electrical Engineering & Computer Science",
     org: "Massachusetts Institute of Technology",
-    description: "Thesis: Enhancing 3D Scene Graph Generation with Multimodal Embeddings (SPARK Lab), advised by Luca Carlone. Graduate coursework included Robotic Manipulation, Visual Navigation for Autonomous Vehicles, Bio-inspired Robots, Advanced Natural Language Processing, Medical Device Design, and Machine Learning for Healthcare.",
+    description: "GPA: 5.0/5.0. Thesis: Enhancing 3D Scene Graph Generation with Multimodal Embeddings (SPARK Lab), advised by Luca Carlone. Graduate coursework included Robotic Manipulation, Visual Navigation for Autonomous Vehicles, Bio-inspired Robots, Advanced Natural Language Processing, Medical Device Design, and Machine Learning for Healthcare.",
     tags: ["Robotics", "NLP", "ML for Healthcare"],
   },
   {
@@ -151,13 +151,19 @@ const EXPERIENCE = [
     dates: "2019 — 2023",
     title: "B.S., Electrical Engineering & Computer Science",
     org: "Massachusetts Institute of Technology",
-    description: "Coursework spanning algorithms, software construction, machine learning, signal processing, power electronics, robotics, and medical device design. Director & Coordinator of Camp Kesem at MIT, raising $160k to run a free summer camp for 150 children whose parents have or have had cancer.",
+    description: "GPA: 5.0/5.0. Coursework spanning algorithms, software construction, machine learning, signal processing, power electronics, robotics, and medical device design. Director & Coordinator of Camp Kesem at MIT, raising $160k to run a free summer camp for 150 children whose parents have or have had cancer.",
     tags: ["Algorithms", "Machine Learning", "Robotics", "Embedded Systems"],
   },
 ];
 
 /* PUBLICATIONS — newest first. Your name is bolded automatically. */
 const PUBLICATIONS = [
+  {
+    authors: "Chen, Z. J., August, P., Torten Rabinowitz, A., Karvelas, N., Morales, J., & Elahi, F.",
+    year: "2026",
+    title: "Accelerated CD8⁺ T cell immunosenescence in monogenic vascular dementia",
+    venue: "Poster, JAX-NYSCF Conference, New York, NY, United States",
+  },
   {
     authors: "Morales, J., Karvelas, N., Torten Rabinowitz, A., Vaza, R., Chousal, A., Goate, A., Huang, K.l., & Elahi, F.",
     year: "2026",
