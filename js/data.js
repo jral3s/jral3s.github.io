@@ -176,7 +176,6 @@ const PUBLICATIONS = [
     year: "2024",
     title: "Enhancing 3D scene graph generation with multimodal embeddings",
     venue: "Master's thesis, Massachusetts Institute of Technology",
-    url: "https://hdl.handle.net/1721.1/156743",
   },
   {
     authors: "Unikewicz, B., Sologuren, E., Morales, J., Pincot, A., Sams, S., Hanumara, N. C., Slocum, A., & Cohen, T.",
