@@ -305,3 +305,17 @@ ol, ul { list-style: none; }
   html { scroll-behavior: auto; }
   * { transition: none !important; }
 }
+
+/* ── PUBLICATIONS ── */
+.pub-list { display: flex; flex-direction: column; gap: 24px; }
+.pub { display: grid; grid-template-columns: 56px 1fr; gap: 16px; }
+.pub-year { color: var(--muted); padding-top: 3px; }
+.pub-title { display: block; font-size: 16px; font-weight: 600; color: var(--ink); line-height: 1.4; margin-bottom: 4px; }
+.pub-title.link { color: var(--ink); }
+.pub-title.link:hover { color: var(--link); }
+.pub-authors, .pub-venue { font-size: 14px; }
+.pub-authors strong { color: var(--ink); font-weight: 600; }
+.pub-venue { font-style: italic; }
+@media (max-width: 480px) {
+  .pub { grid-template-columns: 1fr; gap: 2px; }
+}

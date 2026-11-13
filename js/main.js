@@ -189,6 +189,25 @@
     timeline.append(li);
   });
 
+  /* ── Publications ── */
+  const pubList = $("#pub-list");
+  const ME = "Morales, J.";
+  PUBLICATIONS.forEach((p) => {
+    const li = el("li", "pub");
+    li.append(el("span", "pub-year mono", p.year));
+    const body = el("div", "pub-body");
+    const title = el(p.url ? "a" : "span", "pub-title" + (p.url ? " link" : ""), p.title);
+    if (p.url) { title.href = p.url; title.target = "_blank"; title.rel = "noopener"; }
+    const authors = el("p", "pub-authors");
+    p.authors.split(ME).forEach((part, i) => {
+      if (i > 0) authors.append(el("strong", null, ME));
+      authors.append(part);
+    });
+    body.append(title, authors, el("p", "pub-venue", p.venue));
+    li.append(body);
+    pubList.append(li);
+  });
+
   /* ── Active nav link on scroll ── */
   const navAnchors = [...document.querySelectorAll(".nav-links a")];
   const sections = navAnchors.map((a) => document.querySelector(a.getAttribute("href"))).filter(Boolean);

@@ -19,10 +19,10 @@ const PROJECTS = [
     year: "2025",
     category: "Research",              // used for the filter chips
     description:
-      "Proposed Event Maps, a map representation that tags GPS-located image embeddings with user-defined events (traffic signals, obstacles, anomalies) using pretrained visual question answering models. Evaluated ViLT, BLIP, and BLIP-2 on 1,300+ annotated Barcelona street images, analyzing prompt sensitivity for assistive navigation. Poster at ICRA 2025, with IRI (CSIC-UPC) and Biel Glasses.",
+      "Proposed Event Maps, a map representation that tags GPS-located image embeddings with user-defined events (traffic signals, obstacles, anomalies) using pretrained visual question answering models. Evaluated ViLT, BLIP, and BLIP-2 on 1,300+ annotated Barcelona street images, analyzing prompt sensitivity for assistive navigation. Published at ICRA 2025, with IRI (CSIC-UPC) and Biel Glasses.",
     tags: ["Vision-Language Models", "VQA", "Assistive Tech", "Computer Vision"],
     image: "assets/img/projects/vqa.jpg",
-    links: [],                          // e.g. [{ label: "Poster", url: "..." }]
+    links: [{ label: "Paper", url: "https://doi.org/10.1109/ICRA55743.2025.11128754" }],
   },
   {
     title: "Enhancing 3D Scene Graph Generation with Multimodal Embeddings",
@@ -32,7 +32,7 @@ const PROJECTS = [
       "M.Eng. thesis in MIT SPARK Lab (advised by Luca Carlone). Added a Viewpoint layer of CLIP embeddings to 3D scene graphs, enabling after-the-fact open-vocabulary queries and zero-shot region segmentation. Improved on ontology-based methods, especially in outdoor and unstructured environments.",
     tags: ["3D Scene Graphs", "CLIP", "Robotics", "Zero-shot"],
     image: "assets/img/projects/thesis.jpg",
-    links: [],                          // e.g. [{ label: "Thesis", url: "..." }]
+    links: [],
   },
   {
     title: "Triple Pendulum Trapeze Artist",
@@ -59,7 +59,7 @@ const PROJECTS = [
     year: "2023",
     category: "Course Project",
     description:
-      "Developed a device to classify thyroid nodule tissue by injecting a precise microliter volume of water and measuring the resulting pressure response. Prototyped and compared a commercial syringe-pump system against a custom \"Bernoulli tube\" design. MIT 2.75 Medical Device Design, team of six.",
+      "Developed a device to classify thyroid nodule tissue by injecting a precise microliter volume of water and measuring the resulting pressure response. Prototyped and compared a commercial syringe-pump system against a custom \"Bernoulli tube\" design. MIT 2.75 Medical Device Design, team of six. Led to an international patent application (PCT/US2024/029550).",
     tags: ["Medical Devices", "Sensing", "Motor Control", "Data Acquisition"],
     image: "assets/img/projects/palpation.jpg",
     links: [],
@@ -109,28 +109,86 @@ const EXPERIENCE = [
     dates: "Apr 2025 — Present",
     title: "Associate Researcher",
     org: "Elahi Lab, Icahn School of Medicine at Mount Sinai",
-    description: "Biostatistical analysis across clinical, proteomic, genomic, transcriptomic, and imaging datasets, including lifespan biomarker studies of APOE genotype and genetic ancestry in Alzheimer's disease.",
-    tags: ["Biostatistics", "Proteomics", "Genomics", "Alzheimer's Disease"],
+    description: "Biostatistical analysis across clinical, proteomic, genomic, transcriptomic, and imaging datasets developed within the lab and by collaborators. Investigating the role of the neurovasculature across neurodegenerative diseases such as AD, CADASIL, ALS, PSP, and CTE, and building the lab's computational infrastructure for data storage, sharing, visualization, and integration.",
+    tags: ["Biostatistics", "Proteomics", "Genomics", "Neurodegeneration"],
   },
   {
-    dates: "Sept 2023 — Apr 2025",  // TODO: confirm start date
+    dates: "Sept 2023 — Mar 2025",
     title: "Graduate Student and Associate Researcher",
     org: "MIT SPARK Lab — Sensing, Perception, Autonomy, and Robot Kinetics",
-    description: "Research at the cutting edge of robotics and autonomous systems. M.Eng. thesis on enhancing 3D scene graph generation with vision-language model embeddings, advised by Luca Carlone.",
+    description: "Investigated vision-language models combined with logic tensor networks and spatial ontologies to build hierarchical 3D scene graphs for task planning and navigation, and developed and fine-tuned vision-language models for open-set semantic classification in PyTorch. M.Eng. thesis advised by Luca Carlone.",
     tags: ["Robotics", "3D Scene Graphs", "Vision-Language Models"],
+  },
+  {
+    dates: "Jun 2024 — Sept 2024",
+    title: "Robotics Research Intern",
+    org: "Universitat Politècnica de Catalunya, Barcelona, Spain",
+    description: "Used visual question answering models to prototype assistive systems that help people with visual impairments navigate Barcelona. Collaborated with industry partner Biel Glasses to design a model and evaluate it on data from their assistive glasses platform. Supervised by Jordi Sanchez-Riera.",
+    tags: ["VQA", "Assistive Tech", "Computer Vision"],
   },
   {
     dates: "2023 — 2024",
     title: "M.Eng., Electrical Engineering & Computer Science",
     org: "Massachusetts Institute of Technology",
-    description: "Thesis: Enhancing 3D Scene Graph Generation with Multimodal Embeddings (SPARK Lab). Graduate coursework included Advanced Natural Language Processing, Machine Learning for Healthcare, Robotic Manipulation, and Visual Navigation for Autonomous Vehicles.",
-    tags: ["NLP", "ML for Healthcare", "Robotics"],
+    description: "Thesis: Enhancing 3D Scene Graph Generation with Multimodal Embeddings (SPARK Lab), advised by Luca Carlone. Graduate coursework included Robotic Manipulation, Visual Navigation for Autonomous Vehicles, Bio-inspired Robots, Advanced Natural Language Processing, Medical Device Design, and Machine Learning for Healthcare.",
+    tags: ["Robotics", "NLP", "ML for Healthcare"],
+  },
+  {
+    dates: "Jun 2022 — Jul 2022",
+    title: "Robotics and AI Intern",
+    org: "Gaia AI, Cambridge, MA",
+    description: "Developed mobile apps and custom hardware backpacks to improve biomass measurement and carbon crediting in forestry. Designed, trained, and deployed object detection, semantic segmentation, and instance segmentation models on computers and mobile devices with PyTorch and TensorFlow.",
+    tags: ["Computer Vision", "Mobile ML", "Hardware"],
+  },
+  {
+    dates: "Jan 2022 — Jun 2022",
+    title: "Undergraduate Researcher",
+    org: "MIT Marine Robotics Group",
+    description: "Researched second-order conic relaxations for initializing range-aided SLAM to better recover maps in marine environments (published at ICRA 2023). Improved the lab's Python robot simulator, Drake optimization tooling, and open-source factor graph library. Advised by John Leonard.",
+    tags: ["SLAM", "Optimization", "Robotics"],
   },
   {
     dates: "2019 — 2023",
-    title: "S.B., Electrical Engineering & Computer Science",
+    title: "B.S., Electrical Engineering & Computer Science",
     org: "Massachusetts Institute of Technology",
-    description: "Coursework spanning algorithms, software construction, machine learning, signal processing, power electronics, robotics, and medical device design. Director & Coordinator of Camp Kesem at MIT, raising ~$160k to run a free summer camp for 150+ children affected by a parent's cancer.",
+    description: "Coursework spanning algorithms, software construction, machine learning, signal processing, power electronics, robotics, and medical device design. Director & Coordinator of Camp Kesem at MIT, raising $160k to run a free summer camp for 150 children whose parents have or have had cancer.",
     tags: ["Algorithms", "Machine Learning", "Robotics", "Embedded Systems"],
+  },
+];
+
+/* PUBLICATIONS — newest first. Your name is bolded automatically. */
+const PUBLICATIONS = [
+  {
+    authors: "Morales, J., Karvelas, N., Torten Rabinowitz, A., Vaza, R., Chousal, A., Goate, A., Huang, K.l., & Elahi, F.",
+    year: "2026",
+    title: "Lifespan analyses reveal APOE genotype differences in plasma biomarkers of Alzheimer's disease across genetically determined ancestries",
+    venue: "Poster, Alzheimer's Association International Conference (AAIC), London, United Kingdom",
+  },
+  {
+    authors: "Morales, J., Gebregziabher, B., Cabañeros, A., & Sanchez-Riera, J.",
+    year: "2025",
+    title: "VQA-driven event maps for assistive navigation for people with low vision in urban environments",
+    venue: "IEEE International Conference on Robotics and Automation (ICRA), pp. 12458–12464",
+    url: "https://doi.org/10.1109/ICRA55743.2025.11128754",
+  },
+  {
+    authors: "Morales, J.",
+    year: "2024",
+    title: "Enhancing 3D scene graph generation with multimodal embeddings",
+    venue: "Master's thesis, Massachusetts Institute of Technology",
+    url: "https://hdl.handle.net/1721.1/156743",
+  },
+  {
+    authors: "Unikewicz, B., Sologuren, E., Morales, J., Pincot, A., Sams, S., Hanumara, N. C., Slocum, A., & Cohen, T.",
+    year: "2024",
+    title: "Mechanisms for controlled volume injection into a soft media with concurrent pressure measurement",
+    venue: "International Patent Application No. PCT/US2024/029550, World Intellectual Property Organization",
+  },
+  {
+    authors: "Papalia, A., Morales, J., Doherty, K. J., Rosen, D. M., & Leonard, J. J.",
+    year: "2023",
+    title: "SCORE: A second-order conic initialization for range-aided SLAM",
+    venue: "IEEE International Conference on Robotics and Automation (ICRA), pp. 10637–10644",
+    url: "https://doi.org/10.1109/ICRA48891.2023.10160787",
   },
 ];

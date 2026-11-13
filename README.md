@@ -3,7 +3,7 @@
 A static, single-page portfolio (plain HTML/CSS/JS, no build step), hosted on GitHub Pages.
 
 ## Editing content
-- **Projects, photos, experience:** edit `js/data.js`.
+- **Projects, photos, experience, publications:** edit `js/data.js`.
 - **Bio, hero text, contact links:** edit `index.html` (look for `EDIT:` comments).
 - **Headshot:** save it as `assets/img/profile.png` (square, ideally 640×640 or larger).
 - **Photos:**
