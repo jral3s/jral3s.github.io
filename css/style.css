@@ -12,7 +12,7 @@
   --on-dark: #ffffff;
   --on-dark-soft: #a9adb3;
   --link: #0d74ce;
-  --accent-glow: #d8ebff;
+  --accent-glow: #e8dbff;
 
   --font-sans: "Inter", -apple-system, system-ui, sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, monospace;
@@ -38,7 +38,7 @@
     --chip: #1f1f22;
     --dark: #000000;
     --link: #5aa9ff;
-    --accent-glow: #0f2740;
+    --accent-glow: #22133d;
   }
 }
 
@@ -115,16 +115,6 @@ ol, ul { list-style: none; }
   font-size: 13px; font-weight: 500;
   color: var(--body);
   background: var(--card);
-}
-
-/* ── DEV BANNER ── */
-.dev-banner {
-  padding: 8px var(--gutter);
-  text-align: center;
-  font-size: 13px; font-weight: 500;
-  color: var(--ink);
-  background: var(--chip);
-  border-bottom: 1px solid var(--hairline);
 }
 
 /* ── NAV ── */
